@@ -93,7 +93,7 @@
                 'Região Demarcada do Douro':shp
                 };
 
-            L.control.layers(baselayers, overlays).addTo(map);
+            L.control.layers(baselayers, overlays,  { collapsed:false } ).addTo(map);
 
         // Inserir Escala 
             var scale = L.control.scale()
